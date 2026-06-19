@@ -1,5 +1,7 @@
 # Garfield Grumblers – Session 02
 
+## Theme
+
 Welcome to **Session 02**!  
 In this session, you’ll practice **detecting code smells**, **scoring them**, **mapping refactors**, and **applying Design by Contract (DbC)** principles.
 
@@ -141,6 +143,77 @@ In this session, you’ll practice **detecting code smells**, **scoring them**, 
 - Be ready to **present your findings** to the other teams.
 
 ---
+
+**Finding Smells Before Fixing Them**
+
+Your mission is not to fix the code.  
+Your mission is to discover and document what is wrong with it.
+
+---
+
+## TASK 6 – Payment Service Smell Report
+
+During Session 01 we reviewed the Payment / Order processing code together.
+
+Revisit that code.
+
+Create:  
+`smell-report.md`
+
+For every smell document:
+
+- Smell name
+- Exact location
+- Why it is a problem
+- Future risks
+- Suggested refactoring
+
+You must find at least:
+
+- 3 Naming smells
+- 3 Responsibility smells
+- 3 Complexity smells
+- 3 Maintainability smells
+
+---
+
+## TASK 7 – Basket vs Order Smell Analysis
+
+Many systems accidentally merge Basket and Order into a single model.
+
+Create:  
+`basket-order-smells.md`
+
+### Discuss:
+
+- What smells appear when Basket and Order are merged?
+- Which invalid states become possible?
+- Which responsibilities become mixed together?
+
+Provide at least 5 concrete examples.
+
+**Example:**  
+`Order.IsSubmitted`
+
+- Why is this suspicious?
+- What state transitions are hidden behind it?
+
+---
+
+## TASK 8 – Technical Debt Ranking
+
+Using findings from Task 1 and Task 2:
+
+Create:  
+`technical-debt-ranking.md`
+
+Rank all identified problems using:
+
+**Impact / Effort Matrix**
+
+Explain your reasoning.  
+No rankings without justification.
+
 
 💡 **Pro Tips:**
 

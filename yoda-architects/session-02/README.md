@@ -1,5 +1,15 @@
 # Yoda Architects – Session 02
 
+
+## Theme
+
+**Modeling Before Coding**
+
+Your mission is not to find smells.  
+Your mission is to discover missing concepts and misplaced responsibilities.
+
+---
+
 Welcome to **Session 02**!  
 In this session, you’ll practice **detecting code smells**, **scoring them**, **mapping refactors**, and **applying Design by Contract (DbC)** principles.
 
@@ -129,6 +139,71 @@ In this session, you’ll practice **detecting code smells**, **scoring them**, 
 - Notes on which **code smells are mitigated** by these contracts
 
 > Tip: Think of DbC as rules that protect your code from invalid usage.
+---
+
+
+---
+
+## TASK 6 – Payment Domain Review
+
+Revisit the Payment / Order example from Session 01.
+
+Create:  
+`responsibility-review.md`
+
+### Answer:
+
+- Which object owns payment calculation?
+- Which object owns discount calculation?
+- Which object owns tax calculation?
+- Which responsibilities are mixed together?
+
+Provide a revised responsibility map.
+
+---
+
+## TASK 7 – Basket vs Order Modeling
+
+Create:  
+`basket-order-model.md`
+
+### Model:
+
+- Basket
+- BasketItem
+- Order
+- OrderItem
+
+### Answer:
+
+- What is the purpose of each concept?
+- What invariants exist?
+- When does Basket become Order?
+- Should Order be created or transformed?
+
+Draw the model.  
+Simple diagrams are acceptable.
+
+---
+
+## TASK 8 – Ubiquitous Language Review
+
+Create:  
+`ubiquitous-language.md`
+
+### Review the language used in Session 01 examples.
+
+Find:
+
+- Ambiguous names
+- Technical names
+- Missing business concepts
+
+Propose better names and explain why.
+
+Focus on communication, not syntax.
+
+
 ---
 
 ## ✅ Submission
